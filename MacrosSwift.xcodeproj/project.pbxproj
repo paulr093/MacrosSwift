@@ -7,19 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C246353328EC8132008F9A2D /* FoodItems.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C246353128EC8132008F9A2D /* FoodItems.xcdatamodeld */; };
+		C246353528EC81CF008F9A2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246353428EC81CF008F9A2D /* Persistence.swift */; };
+		C246353A28ECA8EB008F9A2D /* MealSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246353928ECA8EB008F9A2D /* MealSection.swift */; };
+		C246353D28ECD37A008F9A2D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246353C28ECD37A008F9A2D /* Binding.swift */; };
+		C2E33F1028EDD7FB00829330 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = C2E33F0F28EDD7FB00829330 /* SQLite */; };
+		C2E33F1328EDD83200829330 /* FoodDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E33F1228EDD83200829330 /* FoodDataStore.swift */; };
 		C2E85BEC28E9DBCF001C6EF9 /* MacrosSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85BEB28E9DBCF001C6EF9 /* MacrosSwiftApp.swift */; };
-		C2E85BEE28E9DBCF001C6EF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85BED28E9DBCF001C6EF9 /* ContentView.swift */; };
+		C2E85BEE28E9DBCF001C6EF9 /* MacroJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85BED28E9DBCF001C6EF9 /* MacroJournal.swift */; };
 		C2E85BF028E9DBCF001C6EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E85BEF28E9DBCF001C6EF9 /* Assets.xcassets */; };
 		C2E85BF428E9DBCF001C6EF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E85BF328E9DBCF001C6EF9 /* Preview Assets.xcassets */; };
+		C2E85BFB28E9DC4E001C6EF9 /* MacroRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85BFA28E9DC4E001C6EF9 /* MacroRing.swift */; };
+		C2E85BFF28E9F669001C6EF9 /* MacroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85BFE28E9F669001C6EF9 /* MacroData.swift */; };
+		C2E85C0128EA0348001C6EF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0028EA0348001C6EF9 /* UserData.swift */; };
+		C2E85C0328EA0620001C6EF9 /* DateSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0228EA0620001C6EF9 /* DateSelection.swift */; };
+		C2E85C0728EA521E001C6EF9 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0628EA521E001C6EF9 /* AddItem.swift */; };
+		C2E85C0928EA5FC2001C6EF9 /* AboveListToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0828EA5FC2001C6EF9 /* AboveListToolbar.swift */; };
+		C2E85C0B28EA658C001C6EF9 /* MealsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0A28EA658C001C6EF9 /* MealsList.swift */; };
+		C2E85C0D28EB2EC7001C6EF9 /* MealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E85C0C28EB2EC7001C6EF9 /* MealRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C246353228EC8132008F9A2D /* FoodItems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodItems.xcdatamodel; sourceTree = "<group>"; };
+		C246353428EC81CF008F9A2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C246353928ECA8EB008F9A2D /* MealSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSection.swift; sourceTree = "<group>"; };
+		C246353C28ECD37A008F9A2D /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		C2E33F1228EDD83200829330 /* FoodDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataStore.swift; sourceTree = "<group>"; };
 		C2E85BE828E9DBCF001C6EF9 /* MacrosSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacrosSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E85BEB28E9DBCF001C6EF9 /* MacrosSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacrosSwiftApp.swift; sourceTree = "<group>"; };
-		C2E85BED28E9DBCF001C6EF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2E85BED28E9DBCF001C6EF9 /* MacroJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroJournal.swift; sourceTree = "<group>"; };
 		C2E85BEF28E9DBCF001C6EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E85BF128E9DBCF001C6EF9 /* MacrosSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacrosSwift.entitlements; sourceTree = "<group>"; };
 		C2E85BF328E9DBCF001C6EF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2E85BFA28E9DC4E001C6EF9 /* MacroRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroRing.swift; sourceTree = "<group>"; };
+		C2E85BFE28E9F669001C6EF9 /* MacroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroData.swift; sourceTree = "<group>"; };
+		C2E85C0028EA0348001C6EF9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C2E85C0228EA0620001C6EF9 /* DateSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelection.swift; sourceTree = "<group>"; };
+		C2E85C0628EA521E001C6EF9 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		C2E85C0828EA5FC2001C6EF9 /* AboveListToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboveListToolbar.swift; sourceTree = "<group>"; };
+		C2E85C0A28EA658C001C6EF9 /* MealsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsList.swift; sourceTree = "<group>"; };
+		C2E85C0C28EB2EC7001C6EF9 /* MealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +54,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E33F1028EDD7FB00829330 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C246353028EC8068008F9A2D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C246353128EC8132008F9A2D /* FoodItems.xcdatamodeld */,
+				C246353428EC81CF008F9A2D /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C246353B28ECD365008F9A2D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C246353C28ECD37A008F9A2D /* Binding.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2E33F1128EDD81E00829330 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				C2E33F1228EDD83200829330 /* FoodDataStore.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
 		C2E85BDF28E9DBCE001C6EF9 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				C2E85BEB28E9DBCF001C6EF9 /* MacrosSwiftApp.swift */,
-				C2E85BED28E9DBCF001C6EF9 /* ContentView.swift */,
+				C246353B28ECD365008F9A2D /* Helpers */,
+				C246353028EC8068008F9A2D /* CoreData */,
+				C2E33F1128EDD81E00829330 /* SQLite */,
+				C2E85BFD28E9F64D001C6EF9 /* DataModels */,
+				C2E85BFC28E9F609001C6EF9 /* Views */,
 				C2E85BEF28E9DBCF001C6EF9 /* Assets.xcassets */,
 				C2E85BF128E9DBCF001C6EF9 /* MacrosSwift.entitlements */,
 				C2E85BF228E9DBCF001C6EF9 /* Preview Content */,
@@ -67,6 +124,30 @@
 				C2E85BF328E9DBCF001C6EF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2E85BFC28E9F609001C6EF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2E85BFA28E9DC4E001C6EF9 /* MacroRing.swift */,
+				C2E85C0228EA0620001C6EF9 /* DateSelection.swift */,
+				C2E85BED28E9DBCF001C6EF9 /* MacroJournal.swift */,
+				C2E85C0A28EA658C001C6EF9 /* MealsList.swift */,
+				C2E85C0C28EB2EC7001C6EF9 /* MealRow.swift */,
+				C2E85C0828EA5FC2001C6EF9 /* AboveListToolbar.swift */,
+				C2E85C0628EA521E001C6EF9 /* AddItem.swift */,
+				C246353928ECA8EB008F9A2D /* MealSection.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2E85BFD28E9F64D001C6EF9 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2E85BFE28E9F669001C6EF9 /* MacroData.swift */,
+				C2E85C0028EA0348001C6EF9 /* UserData.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +166,9 @@
 			dependencies = (
 			);
 			name = MacrosSwift;
+			packageProductDependencies = (
+				C2E33F0F28EDD7FB00829330 /* SQLite */,
+			);
 			productName = MacrosSwift;
 			productReference = C2E85BE828E9DBCF001C6EF9 /* MacrosSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +197,9 @@
 				Base,
 			);
 			mainGroup = C2E85BDF28E9DBCE001C6EF9;
+			packageReferences = (
+				C2E33F0E28EDD7FB00829330 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = C2E85BE928E9DBCF001C6EF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +226,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E85BEE28E9DBCF001C6EF9 /* ContentView.swift in Sources */,
+				C2E85BEE28E9DBCF001C6EF9 /* MacroJournal.swift in Sources */,
+				C2E85BFB28E9DC4E001C6EF9 /* MacroRing.swift in Sources */,
+				C2E85C0328EA0620001C6EF9 /* DateSelection.swift in Sources */,
+				C246353D28ECD37A008F9A2D /* Binding.swift in Sources */,
+				C2E85C0D28EB2EC7001C6EF9 /* MealRow.swift in Sources */,
+				C2E85BFF28E9F669001C6EF9 /* MacroData.swift in Sources */,
+				C246353A28ECA8EB008F9A2D /* MealSection.swift in Sources */,
+				C246353528EC81CF008F9A2D /* Persistence.swift in Sources */,
+				C2E85C0728EA521E001C6EF9 /* AddItem.swift in Sources */,
+				C246353328EC8132008F9A2D /* FoodItems.xcdatamodeld in Sources */,
+				C2E33F1328EDD83200829330 /* FoodDataStore.swift in Sources */,
+				C2E85C0928EA5FC2001C6EF9 /* AboveListToolbar.swift in Sources */,
+				C2E85C0128EA0348001C6EF9 /* UserData.swift in Sources */,
 				C2E85BEC28E9DBCF001C6EF9 /* MacrosSwiftApp.swift in Sources */,
+				C2E85C0B28EA658C001C6EF9 /* MealsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = MacrosSwift/MacrosSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,6 +370,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Macros";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,20 +380,22 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MacrosSwift;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prichan.mymacrocounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = MacrosSwift/MacrosSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -307,6 +413,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Macros";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,20 +423,22 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MacrosSwift;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prichan.mymacrocounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -354,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2E33F0E28EDD7FB00829330 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2E33F0F28EDD7FB00829330 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2E33F0E28EDD7FB00829330 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C246353128EC8132008F9A2D /* FoodItems.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C246353228EC8132008F9A2D /* FoodItems.xcdatamodel */,
+			);
+			currentVersion = C246353228EC8132008F9A2D /* FoodItems.xcdatamodel */;
+			path = FoodItems.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C2E85BE028E9DBCE001C6EF9 /* Project object */;
 }

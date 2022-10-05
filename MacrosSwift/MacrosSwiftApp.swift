@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct MacrosSwiftApp: App {
+    @StateObject var data = MacroData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                MacroJournal()
+                    .environmentObject(data)
+            }
         }
     }
 }
