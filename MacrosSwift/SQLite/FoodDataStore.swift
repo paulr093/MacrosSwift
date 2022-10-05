@@ -100,6 +100,29 @@ class FoodDataStore {
         return foods
     }
     
+    func update(id: Int64, itemName: String, date: String, mealOfDay: String, calories: Double, protein: Double, carbs: Double, fat: Double) -> Bool {
+            guard let database = db else { return false }
+
+            let task = foods.filter(self.id == id)
+            do {
+                let update = task.update([
+                    self.itemName <- itemName,
+                    self.date <- date,
+                    self.mealOfDay <- mealOfDay,
+                    self.calories <- calories,
+                    self.protein <- protein,
+                    self.carbs <- carbs,
+                    self.fat <- fat
+                ])
+                if try database.run(update) > 0 {
+                    return true
+                }
+            } catch {
+                print(error)
+            }
+            return false
+        }
+    
     func delete(id: Int64) -> Bool {
         guard let database = db else {
             return false

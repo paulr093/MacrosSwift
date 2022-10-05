@@ -22,12 +22,7 @@ class MacroData: ObservableObject {
     }
     
     func deleteTask(at indexSet: IndexSet, category: String) {
-//        switch category {
-//        case "Breakfast":
-            let id = indexSet.map { self.getItemsByCategory(category: category)[$0].id }.first
-//        }
-        
-//        let id = indexSet.map { self.foodItems[$0].id }.first
+        let id = indexSet.map { self.getItemsByCategory(category: category)[$0].id }.first
         if let id = id {
             let delete = FoodDataStore.shared.delete(id: id)
             if delete {

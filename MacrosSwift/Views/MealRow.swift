@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MealRow: View {
+    @EnvironmentObject var data: MacroData
+    
     var mealItem: FoodItem
     let categoryStyle: Font = .caption
-    @State private var isPresented = false
     
+    @State private var isPresented = false
     @State private var itemName = ""
     @State private var calories: Double = 0
     @State private var protein: Double = 0
@@ -101,10 +103,18 @@ struct MealRow: View {
                 }
                 
                 Button("Update") {
-                    isPresented.toggle()
+                    let updated = FoodDataStore.shared.update(id: mealItem.id, itemName: itemName, date: mealItem.date, mealOfDay: mealItem.mealOfDay, calories: calories, protein: protein, carbs: carbs, fat: fat)
+                    if updated {
+                        isPresented.toggle()
+                    }
                 }
             }
             
+        }
+        .onChange(of: isPresented) { isPresented in
+            if !isPresented {
+                data.getFoodItems()
+            }
         }
         .onAppear {
             itemName = mealItem.itemName
@@ -122,6 +132,5 @@ struct MealRow: View {
 //        let ctx = PersistenceController.preview.container.viewContext
 //        
 //        MealRow(mealItem: Food(context: ctx))
-//            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 //    }
 //}
