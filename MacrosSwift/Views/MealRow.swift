@@ -14,11 +14,22 @@ struct MealRow: View {
     let categoryStyle: Font = .caption
     
     @State private var isPresented = false
+    @State private var mealOfDay: MealOfDay = .breakfast
     @State private var itemName = ""
     @State private var calories: Double = 0
     @State private var protein: Double = 0
     @State private var carbs: Double = 0
     @State private var fat: Double = 0
+    
+    var usedInSearch = false
+    var isUpdating = true
+    @State private var addedFromSearch = false
+    enum MealOfDay: String {
+        case breakfast = "Breakfast"
+        case lunch = "Lunch"
+        case dinner = "Dinner"
+        case snacks = "Snacks"
+    }
     
     private static let formatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -30,8 +41,15 @@ struct MealRow: View {
         HStack {
             VStack(alignment: .leading, spacing: 3) {
                 
+                if usedInSearch {
+                    Text(mealItem.date)
+                        .font(.caption)
+                        .opacity(0.5)
+                }
+                
                 Text(mealItem.itemName)
                     .font(.headline)
+                
                 
                 HStack {
                     Image(systemName: "c.circle")
@@ -68,16 +86,36 @@ struct MealRow: View {
                     
                     Spacer()
                 }
-                .frame(maxWidth: .infinity)
             }
-            Spacer()
+            .frame(maxWidth: .infinity)
             
         }
         .onTapGesture {
-            isPresented.toggle()
+            if isUpdating {
+                isPresented.toggle()
+            } else {
+                let id = FoodDataStore.shared.insert(date: data.globalDate.formatted(date: .abbreviated, time: .omitted), itemName: mealItem.itemName, mealOfDay: mealItem.mealOfDay, calories: mealItem.calories, protein: mealItem.protein, carbs: mealItem.carbs, fat: mealItem.fat)
+                
+                if id != nil {
+                    addedFromSearch = true
+                    data.getAllMacros()
+                    data.getFoodItems()
+                }
+            }
+        }
+        .alert(isPresented: $addedFromSearch) {
+            Alert(title: Text("\(mealItem.itemName) was added to \(data.globalDate.formatted(date: .abbreviated, time: .omitted)) \(mealItem.mealOfDay) items!"))
         }
         .sheet(isPresented: $isPresented) {
             Form {
+                Picker("Meal", selection: $mealOfDay) {
+                    Text("Breakfast").tag(MealOfDay.breakfast)
+                    Text("Lunch").tag(MealOfDay.lunch)
+                    Text("Dinner").tag(MealOfDay.dinner)
+                    Text("Snacks").tag(MealOfDay.snacks)
+                }
+                .pickerStyle(.segmented)
+                
                 Section("Item Name") {
                     TextField("Item Name", text: $itemName)
                 }
@@ -103,7 +141,7 @@ struct MealRow: View {
                 }
                 
                 Button("Update") {
-                    let updated = FoodDataStore.shared.update(id: mealItem.id, itemName: itemName, date: mealItem.date, mealOfDay: mealItem.mealOfDay, calories: calories, protein: protein, carbs: carbs, fat: fat)
+                    let updated = FoodDataStore.shared.update(id: mealItem.id, itemName: itemName, date: mealItem.date, mealOfDay: mealOfDay.rawValue, calories: calories, protein: protein, carbs: carbs, fat: fat)
                     if updated {
                         isPresented.toggle()
                     }
@@ -117,6 +155,19 @@ struct MealRow: View {
             }
         }
         .onAppear {
+            switch mealItem.mealOfDay {
+            case "Breakfast":
+                mealOfDay = .breakfast
+            case "Lunch":
+                mealOfDay = .lunch
+            case "Dinner":
+                mealOfDay = .dinner
+            case "Snacks":
+                mealOfDay = .snacks
+            default:
+                mealOfDay = .breakfast
+            }
+            
             itemName = mealItem.itemName
             calories = mealItem.calories
             protein = mealItem.protein
@@ -127,10 +178,8 @@ struct MealRow: View {
     
 }
 
-//struct MealRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let ctx = PersistenceController.preview.container.viewContext
-//        
-//        MealRow(mealItem: Food(context: ctx))
-//    }
-//}
+struct MealRow_Previews: PreviewProvider {
+    static var previews: some View {
+        MealRow(mealItem: FoodItem(id: 0, date: "Oct 3, 2022", mealOfDay: "Breakfast", itemName: "Pancakes", calories: 300, protein: 20, carbs: 10, fat: 12), usedInSearch: true)
+    }
+}

@@ -27,8 +27,9 @@ struct DateSelection: View {
             displayedComponents: [.date]
         )
         .labelsHidden()
-        .onChange(of: data.globalDate) { value in
-            compareDates(chosenDate: value)
+        .onChange(of: data.globalDate) { _ in
+            data.getFoodItems()
+            data.getAllMacros()
         }
     }
 }

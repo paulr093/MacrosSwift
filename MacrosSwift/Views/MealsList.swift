@@ -18,9 +18,6 @@ struct MealsList: View {
             MealSection(category: "Snacks")
         }
         .cornerRadius(20)
-        .toolbar {
-            AddItem()
-        }
     }
 }
 

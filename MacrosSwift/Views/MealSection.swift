@@ -18,6 +18,8 @@ struct MealSection: View {
             }
             .onDelete { indexSet in
                 data.deleteTask(at: indexSet, category: category)
+                data.getFoodItems()
+                data.getAllMacros()
             }
         } header: {
             Text(category)

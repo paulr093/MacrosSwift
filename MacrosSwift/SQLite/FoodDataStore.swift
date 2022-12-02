@@ -70,7 +70,7 @@ class FoodDataStore {
     func insert(date: String, itemName: String, mealOfDay: String, calories: Double, protein: Double, carbs: Double, fat: Double) -> Int64? {
         guard let database = db else { return nil }
         
-        let insert = foods.insert(self.date <- MacroData().globalDate.formatted(date: .abbreviated, time: .omitted),
+        let insert = foods.insert(self.date <- date,
                                   self.mealOfDay <- mealOfDay,
                                   self.itemName <- itemName,
                                   self.calories <- calories,
